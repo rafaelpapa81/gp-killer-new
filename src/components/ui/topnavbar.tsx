@@ -104,9 +104,9 @@ const Topnavbar = () => {
                     </NavigationMenuTrigger>
                     <NavigationMenuContent>
                       <ul className="w-80 p-3">
-                        {subMenuItemsOne.map((item, idx) => (
-                          <li key={idx}>
-                            <NavigationMenuLink asChild>
+                        <NavigationMenuLink>
+                          {subMenuItemsOne.map((item, idx) => (
+                            <li key={idx}>
                               <a
                                 className={cn(
                                   "flex select-none gap-4 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
@@ -123,9 +123,9 @@ const Topnavbar = () => {
                                   </p>
                                 </div>
                               </a>
-                            </NavigationMenuLink>
-                          </li>
-                        ))}
+                            </li>
+                          ))}
+                        </NavigationMenuLink>
                       </ul>
                     </NavigationMenuContent>
                   </NavigationMenuItem>
@@ -133,9 +133,9 @@ const Topnavbar = () => {
                     <NavigationMenuTrigger>Resources</NavigationMenuTrigger>
                     <NavigationMenuContent>
                       <ul className="w-80 p-3">
-                        {subMenuItemsTwo.map((item, idx) => (
-                          <li key={idx}>
-                            <NavigationMenuLink asChild>
+                        <NavigationMenuLink>
+                          {subMenuItemsTwo.map((item, idx) => (
+                            <li key={idx}>
                               <a
                                 className={cn(
                                   "flex select-none gap-4 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
@@ -152,9 +152,9 @@ const Topnavbar = () => {
                                   </p>
                                 </div>
                               </a>
-                            </NavigationMenuLink>
-                          </li>
-                        ))}
+                            </li>
+                          ))}
+                        </NavigationMenuLink>
                       </ul>
                     </NavigationMenuContent>
                   </NavigationMenuItem>
